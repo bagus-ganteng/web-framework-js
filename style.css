@@ -37,6 +37,7 @@ nav {
     position: -webkit-sticky;
     top: 0;
     background: #ffffff;
+    z-index: 1;
 }
 
 nav ul {
@@ -121,4 +122,81 @@ a.btn-langganan:hover {
 p {
     margin: 10px 0px 10px 0px;
     padding: 10px 0px 10px 0px;
+}
+
+.active {
+    background-color: #CD113B;
+    color: #fff;
+}
+
+.gambar {
+    float: left;
+    width: 200px;
+    height: 150px;
+    margin: 0px 10px;
+    padding: 120px 10px;
+}
+
+.footer-bottom {
+    background-color:#3b5998;
+    color:#fff;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0px;
+    display: flex;
+    margin-top: 50px;
+}
+
+#artikel {
+    margin-bottom: -5em;
+}
+
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: #CD113B;
+    border-right-color: #CD113B;
+    border-bottom-color: #CD113B;
+    animation: puterin .8s linear infinite;
+}
+
+@keyframes puterin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loading {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.gambarartikel {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.teks {
+    line-height: 25px;
 }
